@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Lora', Georgia, serif;
+    --font-arabic: 'Amiri', 'Noto Naskh Arabic', serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-arabic {
+  font-family: 'Amiri', 'Noto Naskh Arabic', serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 2.2;
+}
+
+.font-serif-title {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* Islamic Geometric Background subtle pattern */
+.islamic-pattern {
+  background-color: transparent;
+  background-image: radial-gradient(rgba(199, 164, 93, 0.15) 1px, transparent 1px), radial-gradient(rgba(199, 164, 93, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+.islamic-pattern-dark {
+  background-color: transparent;
+  background-image: radial-gradient(rgba(214, 183, 111, 0.12) 1px, transparent 1px), radial-gradient(rgba(214, 183, 111, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Hide scrollbars for clean mobile appearance while maintaining scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "İrfan Meclisi",
+  "description": "Kur’an, hadis, İslami ilimler ve kişisel manevi gelişim platformu",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
